@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  initial-scale=1.0">
+    <title>JS Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+        }
+        h1{
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+        #myimage{
+            height: 400px;
+            width: 350px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+        .on{
+            font-size: larger;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: greenyellow;
+        }
+        .off{
+            font-size: larger;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+<h1>BUlB</h1>
+<button class="on" type="button" onclick="document.getElementById('myimage').src='/bulbson.png'">Turn on the Bulb</button>
+<img id="myimage" src="/bulbsoff.png" alt="Bulb">
+<button class="off" type="button" onclick="document.getElementById('myimage').src= '/bulbsoff.png'">Turn Off Bulb</button><br>
+<p id="msg">Bulb is</p>
+
+    <script src="practice.js"></script>
+</body>
+</html>
